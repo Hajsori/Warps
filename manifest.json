@@ -1,0 +1,46 @@
+{
+    "format_version": 2,
+    "header": {
+        "name": "Warps!",
+        "description": "Create Warps and let others to teleport there!",
+        "uuid": "80119be2-1c29-27f9-1131-cfac39eeb3d7",
+        "version": [1, 2, 1],
+        "min_engine_version": [1, 17, 0]
+    },
+    "modules": [
+        {
+            "type": "data",
+            "uuid": "b3f23df0-8f96-64ea-c4b6-58590dc0f047",
+            "version": [1, 0, 0]
+        },
+        {
+            "type": "script",
+            "language": "javascript",
+            "uuid": "da154907-c689-dd2c-68d0-43c784322bf9",
+            "version": [1, 0, 0],
+            "entry": "scripts/index.js"
+        }
+    ],
+    "dependencies": [
+        {
+            "module_name": "@minecraft/server",
+            "version": "1.12.0-beta"
+        },
+        {
+            "module_name": "@minecraft/server-ui",
+            "version": "1.2.0-beta"
+        }
+    ],
+    "subpacks": [
+        {
+            "folder_name": "recipe_true",
+            "name": "§r§7Craftable §dWarp Menu§8: §aTrue§r",
+            "memory_tier": 0
+        },
+        {
+            "folder_name": "recipe_false",
+            "name": "§r§7Craftable §dWarp Menu§8: §cFalse§r",
+            "memory_tier": 1
+        }
+    ]
+}
