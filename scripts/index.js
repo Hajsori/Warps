@@ -84,8 +84,6 @@ Minecraft.world.afterEvents.playerJoin.subscribe(() => {
     } catch { }
 })
 
-Minecraft.system.beforeEvents.watchdogTerminate.subscribe((data) => data.cancel = true)
-
 Minecraft.world.beforeEvents.chatSend.subscribe((data) => {
     let player = data.sender
 
