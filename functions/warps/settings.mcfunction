@@ -1,5 +1,5 @@
-# Made by DerCoderJo
+# Made by Hajsori
 
 tag @s add "warps:settings"
 
-# Made by DerCoderJo
+# Made by Hajsori
