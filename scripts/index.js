@@ -82,7 +82,7 @@ function showWarpMenu(player) {
     for (let warp of Minecraft.world.scoreboard.getObjective("warps:data").getParticipants()) {
         warp = JSON.parse(warp.displayName.replaceAll("\\", ""))
         if (!warp?.name || !warp?.x.toString() || !warp?.y.toString() || !warp?.z.toString() || !warp?.dimension) continue
-        actionForm.button(`§r${warp.name}§r\n§fX: §8${warp.x} §fY: §8${warp.y} §fY: §8${warp.z}§r ${warp.dimension.replace("overworld", "§r§2Overworld§r").replace("nether", "§r§cNether§r").replace("the_end", "§r§5The End§r")}`)
+        actionForm.button(`§r${warp.name}§r\n§fX: §8${warp.x} §fY: §8${warp.y} §fZ: §8${warp.z}§r ${warp.dimension.replace("overworld", "§r§2Overworld§r").replace("nether", "§r§cNether§r").replace("the_end", "§r§5The End§r")}`)
         warps.push(warp)
     }
 
@@ -126,7 +126,7 @@ function removeWarpMenu(player) {
         let warp = JSON.parse(warpo.displayName.replaceAll("\\", ""))
         warp.data = warpo.displayName
         if (!warp?.name || !warp?.x.toString() || !warp?.y.toString() || !warp?.z.toString() || !warp?.dimension) continue
-        actionForm.button(`§r${warp.name}§r\n§fX: §8${warp.x} §fY: §8${warp.y} §fY: §8${warp.z}§r ${warp.dimension.replace("overworld", "§r§2Overworld§r").replace("nether", "§r§cNether§r").replace("the_end", "§r§5The End§r")}`)
+        actionForm.button(`§r${warp.name}§r\n§fX: §8${warp.x} §fY: §8${warp.y} §fZ: §8${warp.z}§r ${warp.dimension.replace("overworld", "§r§2Overworld§r").replace("nether", "§r§cNether§r").replace("the_end", "§r§5The End§r")}`)
         warps.push(warp)
     }
     if (warps.length == 0) return player.sendMessage("§r§8[§dWarps!§8] §cThere are no Warps!§r")

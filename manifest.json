@@ -4,7 +4,7 @@
         "name": "Warps!",
         "description": "Create Warps and let others to teleport there!",
         "uuid": "80119be2-1c29-27f9-1131-cfac39eeb3d7",
-        "version": [2, 0, 0],
+        "version": [2, 0, 2],
         "min_engine_version": [1, 17, 0]
     },
     "modules": [
