@@ -13,7 +13,8 @@
 			"minecraft:display_name": {
 				"value": "§r§dWarp Menu§r"
 			},
-            "minecraft:glint": true
+            "minecraft:glint": true,
+			"warps:warp_menu": {}
 		}
 	}
 }

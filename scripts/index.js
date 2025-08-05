@@ -35,7 +35,7 @@ Minecraft.system.beforeEvents.startup.subscribe((event) => {
         {
             name: "warps:addwarp",
             description: "Add a new Warp",
-            permissionLevel: Minecraft.CommandPermissionLevel.Admin
+            permissionLevel: Minecraft.CommandPermissionLevel.GameDirectors
         },
         (origin) => {
             Minecraft.system.run(() => {
@@ -52,7 +52,7 @@ Minecraft.system.beforeEvents.startup.subscribe((event) => {
         {
             name: "warps:removewarp",
             description: "Remove a Warp",
-            permissionLevel: Minecraft.CommandPermissionLevel.Admin
+            permissionLevel: Minecraft.CommandPermissionLevel.GameDirectors
         },
         (origin) => {
             Minecraft.system.run(() => {
@@ -64,6 +64,13 @@ Minecraft.system.beforeEvents.startup.subscribe((event) => {
             })
         }
     )
+
+
+    event.itemComponentRegistry.registerCustomComponent("warps:warp_menu", {
+        onUse: (event) => {
+            showWarpMenu(event.source)
+        }
+    })
 })
 
 
