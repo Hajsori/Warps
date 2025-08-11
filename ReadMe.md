@@ -1,3 +1,5 @@
+[![Join us on Discord](https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/social/discord-plural_vector.svg)](https://discord.gg/AqG9WRMDjp) [![Available on CurseForge](https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/available/curseforge_vector.svg)](https://www.curseforge.com/minecraft-bedrock/scripts/warps)
+
 Create Warps with just one command and teleport to them instantly!
 
 To create a warp you just need to write **/addwarp**, to remove a warp you just need to type **/removewarp**!
