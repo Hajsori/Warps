@@ -3,22 +3,22 @@
     "header": {
         "name": "Warps!",
         "description": "Create Warps and let others to teleport there!",
-        "uuid": "80119be2-1c29-27f9-1131-cfac39eeb3d7",
-        "version": [2, 0, 3],
+        "uuid": "cf5dae0e-dd06-4bf0-93e2-4ffaddf5a787",
+        "version": [2, 1, 0],
         "min_engine_version": [1, 17, 0]
     },
     "modules": [
         {
             "type": "data",
-            "uuid": "b3f23df0-8f96-64ea-c4b6-58590dc0f047",
+            "uuid": "918a4971-6a5d-4733-9d03-2852a6116c7a",
             "version": [1, 0, 0]
         },
         {
             "type": "script",
             "language": "javascript",
-            "uuid": "da154907-c689-dd2c-68d0-43c784322bf9",
+            "uuid": "4d52cbe6-38f9-4007-8218-b2f7ec6f8231",
             "version": [1, 0, 0],
-            "entry": "scripts/index.js"
+            "entry": "scripts/xyz/hajsori/warps/index.js"
         }
     ],
     "dependencies": [
